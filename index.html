@@ -10,25 +10,65 @@
   </head>
   <body>
     <div class="container">
-      <div class="radio">
-        <label>
-          <input type="radio" name="animal" value="Lady Bugs" checked>
-          Lady Bugs
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-        <input type="radio" name="animal" value="Turtle">
-        Turtle
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-        <input type="radio" name="animal" value="Spiders">
-        Spiders
-        </label>
-      </div>
+      <form id="animals">
+        <div class="radio">
+          <label>
+            <input type="radio" id="ladybugs" name="animal" value="ladybugs" checked>
+            Lady Bugs
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+          <input type="radio" id="turtle" name="animal" value="turtle">
+          Turtle
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+          <input type="radio" id="spiders" name="animal" value="spiders">
+          Spiders
+          </label>
+        </div>
 
+        <button type="submit" class="btn">Select</button>
+
+      </form>
+
+      <div class="container">
+        <div class="turtle">
+          <h1>Turtles</h1>
+          <p>Thank you for Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <h3>Here are some useful links:</h3>
+          <ul>
+            <li><a href="http://turtles.org/">Marine Turtles</a></li>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CMNry4PE93Y" frameborder="0" allowfullscreen></iframe>
+          </ul>
+        </div>
+
+        <div class="ladybugs">
+          <h1>Ladybugs</h1>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/6C0HSoX4b8c" frameborder="0" allowfullscreen></iframe>
+          <h3>Ladybugs are the cutest. They are also lucky.</h3>
+          <img src="img/ladybug.png" alt="This is a picture of a ladybug!" />
+        </div>
+
+        <div class="spiders">
+          <h1>Spiders</h1>
+
+
+          <img src="img/brazilian-spider.jpg" alt="brazilian spider" />
+          <img src="img/spiderleg.jpg" alt="spider on its back legs" />
+
+          <h3>Here are some useful links:</h3>
+          <ul>
+            <li><a href="http://www.termite.com/spider-identification.html">Spider ID</a></li>
+            <li><a href="https://phys.org/news/2010-05-scientists-goats-spider-silk.html">Goats making spider silk</a></li>
+          </ul>
+        </div>
+
+        <ul id="output">
+
+        </ul>
 
     </div>
   </body>
